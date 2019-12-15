@@ -1,0 +1,11 @@
+`timescale 1ns / 1ps
+module HalfAdder(x,y,sum,carry);
+input x,y;
+output sum,carry;
+reg sum,carry;
+always@(x,y)
+begin
+ sum = x ^ y;
+ carry = x & y;
+end
+endmodule
